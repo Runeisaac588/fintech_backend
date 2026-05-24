@@ -24,13 +24,8 @@ Route::get('/routes', function () {
 
 
 
-require app_path(
-        'core/modules/orders/OrdersRoutes.php',
-);
-
-require_once app_path(
-    'core/modules/auth/AuthRoutes.php',
-);
+require_once app_path('Core/Modules/Auth/AuthRoutes.php');
+require_once app_path('Core/Modules/Orders/OrdersRoutes.php');
 
 
 // require app_path(

@@ -8,6 +8,7 @@ return [
 
     'allowed_origins' => [
         'http://localhost:3000',
+        'https://fintech-frontend-rouge.vercel.app/'
     ],
 
     'allowed_origins_patterns' => [],

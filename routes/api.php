@@ -32,7 +32,7 @@ require_once app_path(
     'core/modules/auth/AuthRoutes.php',
 );
 
-
+dd(app_path('Core/Modules/Auth/AuthRoutes.php'), file_exists(app_path('Core/Modules/Auth/AuthRoutes.php')));
 
 // require app_path(
 //     'Modules/Wallet/Routes/wallet.routes.php'

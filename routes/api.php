@@ -10,7 +10,17 @@ use Illuminate\Support\Facades\Route;
 | Here is where you can register API routes for your application.
 |
 */
-
+Route::get('/routes', function () {
+    return response()->json(
+        collect(Route::getRoutes())->map(function ($route) {
+            return [
+                'uri' => $route->uri(),
+                'methods' => $route->methods(),
+                'name' => $route->getName(),
+            ];
+        })
+    );
+});
 require_once app_path(
     'core/modules/auth/AuthRoutes.php',
     

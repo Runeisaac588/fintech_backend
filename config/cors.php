@@ -7,7 +7,6 @@ return [
     'allowed_methods' => ['*'],
 
     'allowed_origins' => [
-        'http://localhost:3000',
         'https://fintech-frontend-rouge.vercel.app'
     ],
 

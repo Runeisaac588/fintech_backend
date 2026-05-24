@@ -7,7 +7,7 @@ use App\Http\Controllers\Controller;
 // use App\Modules\Auth\UseCases\LoginUseCase;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
-use App\Core\Modules\auth\UseCases\LoginUseCase;
+use App\Core\Modules\Auth\UseCases\LoginUseCase;
 
 class AuthController extends Controller
 {

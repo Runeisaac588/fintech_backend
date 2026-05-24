@@ -22,9 +22,7 @@ Route::get('/routes', function () {
     );
 });
 
-require_once app_path(
-    'Core/Modules/Auth/AuthRoutes.php',
-);
+
 
 require app_path(
         'core/modules/orders/OrdersRoutes.php',

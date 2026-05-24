@@ -21,15 +21,20 @@ Route::get('/routes', function () {
         })
     );
 });
+
 require_once app_path(
-    'core/modules/auth/AuthRoutes.php',
-    
+    'Core/Modules/Auth/AuthRoutes.php',
 );
 
 require app_path(
         'core/modules/orders/OrdersRoutes.php',
-
 );
+
+require_once app_path(
+    'core/modules/auth/AuthRoutes.php',
+);
+
+
 
 // require app_path(
 //     'Modules/Wallet/Routes/wallet.routes.php'

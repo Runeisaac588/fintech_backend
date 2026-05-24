@@ -2,7 +2,7 @@
 namespace App\Core\Modules\Auth;
 
 use Illuminate\Support\Facades\Route;
-use App\Core\Modules\auth\AuthController;
+use App\Core\Modules\Auth\AuthController;
 
 Route::group(['prefix' => 'auth'],function (){
     Route::post('login/', [AuthController::class,'login'])->name( 'login');
